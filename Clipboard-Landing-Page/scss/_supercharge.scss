@@ -1,0 +1,39 @@
+.supercharge {
+
+    .content {
+        margin-bottom: 70px;
+
+        @include breakpoint(large) {
+            margin-bottom: 40px;
+        }
+    }
+    &__columns {
+        @include breakpoint(large){
+            //display: flex;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            padding: 40px;
+
+        }
+    }
+
+    &__column {
+        @include breakpoint(large){
+            //flex:1;
+            
+        }
+        
+    }
+
+    &__icon {
+        display: flex;
+        margin-bottom: 20px;
+        justify-content: center;
+        height: 48px;
+        align-items:center;
+
+        @include breakpoint(large){
+            margin-bottom: 36px;
+        }
+    }
+}
